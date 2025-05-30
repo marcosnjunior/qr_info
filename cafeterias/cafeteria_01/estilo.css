@@ -1,0 +1,139 @@
+:root {
+    /* Paleta de cores original (tons terrosos) */
+    --color-primary: #5c3a21;
+    --color-secondary: #8b5a2b;
+    --color-accent: #e6d5c3;
+    --color-background: #f5f0e8;
+    --color-text: #5c3a21;
+    --color-text-light: #f5f0e8;
+    --color-card: #ffffff;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-description: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 1.8rem;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: var(--color-card);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    height: 200px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-info {
+    padding: 1.5rem;
+}
+
+.item-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price {
+    color: var(--color-secondary);
+}
+
+.item-description {
+    color: var(--color-description);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: var(--color-accent);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--color-text-light);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}

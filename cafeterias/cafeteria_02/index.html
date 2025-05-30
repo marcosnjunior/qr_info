@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Aconchego</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Cafeteria Aconchego</div>
+            <div class="slogan">O melhor café da cidade, feito com amor</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Menu de categorias com rolagem lateral -->
+        <div class="categories">
+            <div class="category-list">
+                <button class="category-btn active" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="cafes">Cafés Especiais</button>
+                <button class="category-btn" data-category="salgados">Salgados</button>
+                <button class="category-btn" data-category="doces">Doces</button>
+                <button class="category-btn" data-category="lanches">Lanches</button>
+                <button class="category-btn" data-category="vegetariano">Vegetariano</button>
+                <button class="category-btn" data-category="sem-gluten">Sem Glúten</button>
+                <button class="category-btn" data-category="combos">Combos</button>
+            </div>
+        </div>
+        
+        <!-- Seção de Bebidas -->
+        <div class="menu-section" id="bebidas">
+            <h2 class="section-title">Bebidas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Café Expresso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Expresso</h3>
+                        <p class="item-description">Café puro e encorpado, preparado sob pressão.</p>
+                        <p class="item-price">R$ 5,90</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Cappuccino" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Cappuccino</h3>
+                        <p class="item-description">Café expresso com leite vaporizado e espuma de leite.</p>
+                        <p class="item-price">R$ 8,50</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Chocolate Quente" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Chocolate Quente</h3>
+                        <p class="item-description">Feito com chocolate belga de alta qualidade.</p>
+                        <p class="item-price">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Seção de Cafés Especiais -->
+        <div class="menu-section" id="cafes" style="display: none;">
+            <h2 class="section-title">Cafés Especiais</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Café Gelado" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Gelado</h3>
+                        <p class="item-description">Café expresso resfriado com gelo e um toque de baunilha.</p>
+                        <p class="item-price">R$ 10,90</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Latte Macchiato" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Latte Macchiato</h3>
+                        <p class="item-description">Leite vaporizado com um toque de café expresso.</p>
+                        <p class="item-price">R$ 11,50</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Mocha" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Mocha</h3>
+                        <p class="item-description">Café expresso com chocolate e leite vaporizado.</p>
+                        <p class="item-price">R$ 12,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Seção de Salgados -->
+        <div class="menu-section" id="salgados" style="display: none;">
+            <h2 class="section-title">Salgados</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Croissant" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Croissant</h3>
+                        <p class="item-description">Croissant folhado com recheio de sua escolha.</p>
+                        <p class="item-price">R$ 7,90</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Sanduíche Natural" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Sanduíche Natural</h3>
+                        <p class="item-description">Pão integral com frango, alface, tomate e maionese.</p>
+                        <p class="item-price">R$ 12,50</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Quiche" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Quiche Lorraine</h3>
+                        <p class="item-description">Torta salgada com bacon, queijo e creme.</p>
+                        <p class="item-price">R$ 14,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Cafeteria Aconchego. Todos os direitos reservados.</p>
+            <p>Horário de funcionamento: Seg-Sex 8h-20h | Sáb-Dom 9h-18h</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Função para alternar entre as categorias
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove a classe active de todos os botões
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Adiciona a classe active ao botão clicado
+                button.classList.add('active');
+                
+                // Oculta todas as seções do menu
+                document.querySelectorAll('.menu-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Mostra apenas a seção correspondente ao botão clicado
+                const category = button.getAttribute('data-category');
+                document.getElementById(category).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
